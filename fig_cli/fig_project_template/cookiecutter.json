@@ -1,0 +1,6 @@
+{
+    "project_name": "new-fig-project",
+    "_copy_without_render": [
+        "*.html"
+    ]
+}

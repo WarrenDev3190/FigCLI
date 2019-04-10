@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fig</title>
+    <link rel="stylesheet" href="/assets/css/fig.css">
+</head>
+
+<body>
+    <header class="fig-header fig-header--jumbotron">
+        <div class="fig-container">
+            <h1 class="fig-h1 fig-script">Fig</h1>
+            <p>A Data Science Framework</p>
+            <button class="fig-btn fig-btn--primary">Get Started</button>
+        </div>
+    </header>
+    <section class="fig-section">
+        <main class="fig-container">
+            <header class="fig-header">
+                <h2 class="fig-h2">Your Project Name</h2>
+            </header>
+            <div class="fig-flex">
+                <section class="fig-col--6">
+                    <h3 class="fig-h3">{{ project_name }} Models</h3>
+                    <figure class="fig-figure">
+                        <ul class="fig-list">
+                            {% if all_models %}
+                            {% for m in all_models %}
+                            <li class="fig-list__item">{{m}}</li>
+                            {% endfor %}
+                            {% else %}
+                            <h2 class="fig-h2">No Models Yet</h2>
+                            {% endif %}
+                        </ul>
+                    </figure>
+                </section>
+                <section class="fig-col--6">
+                    <h3 class="fig-h3">Project Desrcription</h3>
+                </section>
+            </div>
+        </main>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+@import url("https://use.typekit.net/hkk3isc.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --off-white: #f9f8fd;
+    --black: #3d3d3f;
+    --primary: #66a33b;
+    --primary-dark: #497f23;
+    --primary-light: #bfd5af;
+    --gold: #feda6a;
+    --carrot: #e89442;
+    --melon: #fb9081;
+    --eggplant: #453859;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.618;
+    background: var(--off-white);
+    color: var(--black);
+}
+
+.fig-script {
+    font-family: sarah-script, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fig-center-text {
+    text-align: center;
+}
+
+.fig-big {
+    font-size: 64px;
+}
+
+.fig-h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.fig-header {
+    padding: 35px 0;
+}
+
+.fig-header.fig-header--jumbotron {
+    height: 70vh;
+    width: 100%;
+    background-color: var(--black);
+    background-image: url("/assets/imgs/fig.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.fig-header.fig-header--jumbotron .fig-h1 {
+    font-size: 72px !important;
+}
+
+.fig-section {
+    width: 100%;
+}
+
+.fig-section .fig-container {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.fig-flex {
+    display: flex;
+}
+
+.fig-flex.fig-flex--center-all {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.fig-flex .fig-col--6 {
+    padding: 15px;
+    width: 60%;
+}
+
+.fig-btn {
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: var(--white);
+    position: relative;
+    display: inline-block;
+}
+
+.fig-btn:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+.fig-btn.fig-btn--primary {
+    background-color: var(--primary);
+    box-shadow: 0px 5px 0px 0px var(--primary-dark);
+}
+
+
+.fig-figure {
+    padding: 30px 45px;
+    color: var(--primary-dark);
+    background: var(--primary-light);
+    border-radius: 15px;
+}
+
+.fig-figure .fig-list__item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#john {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--primary-dark);
+}
